@@ -13,6 +13,8 @@
 
 package docs.org.apache.pekko.cluster.sharding.typed
 
+import scala.annotation.nowarn
+
 import org.apache.pekko
 import pekko.actor.typed.ActorSystem
 import pekko.actor.typed.Behavior
@@ -24,7 +26,6 @@ import pekko.cluster.sharding.typed.scaladsl.Entity
 import pekko.cluster.sharding.typed.scaladsl.EntityRef
 import pekko.persistence.typed.ReplicaId
 import pekko.persistence.typed.ReplicationId
-import scala.annotation.nowarn
 
 @nowarn("msg=never used")
 object ReplicatedShardingCompileOnlySpec {

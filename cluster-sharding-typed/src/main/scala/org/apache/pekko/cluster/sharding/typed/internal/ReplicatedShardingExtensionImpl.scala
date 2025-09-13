@@ -16,6 +16,8 @@ package org.apache.pekko.cluster.sharding.typed.internal
 import java.util.concurrent.atomic.AtomicLong
 import java.util.{ Map => JMap }
 
+import scala.jdk.CollectionConverters._
+
 import org.apache.pekko
 import pekko.actor.typed.ActorSystem
 import pekko.annotation.InternalApi
@@ -31,7 +33,6 @@ import pekko.actor.typed.scaladsl.LoggerOps
 import pekko.cluster.ClusterSettings.DataCenter
 import pekko.cluster.sharding.typed.ShardingDirectReplication
 import pekko.persistence.typed.ReplicationId
-import pekko.util.ccompat.JavaConverters._
 
 /**
  * INTERNAL API

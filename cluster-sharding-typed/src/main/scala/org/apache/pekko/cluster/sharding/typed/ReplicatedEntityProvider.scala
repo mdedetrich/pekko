@@ -20,8 +20,8 @@ import pekko.cluster.sharding.typed.javadsl.{ Entity => JEntity, EntityTypeKey =
 import pekko.persistence.typed.ReplicaId
 
 import scala.collection.immutable
+import scala.jdk.CollectionConverters._
 import scala.reflect.ClassTag
-import pekko.util.ccompat.JavaConverters._
 import java.util.{ Set => JSet }
 
 import pekko.actor.typed.Behavior

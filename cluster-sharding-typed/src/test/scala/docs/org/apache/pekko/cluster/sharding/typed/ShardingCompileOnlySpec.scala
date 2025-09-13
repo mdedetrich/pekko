@@ -15,17 +15,16 @@ package docs.org.apache.pekko.cluster.sharding.typed
 
 import scala.concurrent.duration._
 
-import org.apache.pekko
-import pekko.actor.typed.{ ActorRef, ActorSystem, Behavior }
-import pekko.actor.typed.scaladsl.Behaviors
-import pekko.cluster.sharding.typed.scaladsl.Entity
-import pekko.persistence.typed.PersistenceId
 import scala.annotation.nowarn
+
 import docs.org.apache.pekko.persistence.typed.BlogPostEntity
 import docs.org.apache.pekko.persistence.typed.BlogPostEntity.Command
 
-import pekko.cluster.sharding.typed.scaladsl.ClusterSharding
-import pekko.cluster.sharding.typed.scaladsl.EntityTypeKey
+import org.apache.pekko
+import pekko.actor.typed.{ ActorRef, ActorSystem, Behavior }
+import pekko.actor.typed.scaladsl.Behaviors
+import pekko.cluster.sharding.typed.scaladsl.{ ClusterSharding, Entity, EntityTypeKey }
+import pekko.persistence.typed.PersistenceId
 
 @nowarn
 object ShardingCompileOnlySpec {
