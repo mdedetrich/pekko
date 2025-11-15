@@ -144,7 +144,7 @@ class RememberEntitiesShardIdExtractorChangeSpec
         val region = ClusterSharding(system).start(TypeName, Props(new PA()), extractEntityId, extractShardId)
         f(system, region)
       } finally {
-        Await.ready(system.terminate(), 20.seconds)
+        system.close()
       }
     }
 
